@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book Worm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>BookWorm</h1>
+    <form id = "bookForm">
+        <input type="text" name="title" id='title' value="Title"></input>
+        <input type="text" name="author" id='author' value="Author"></input>
+        <input type="text" name="isbn" id='isbn' value="ISBN"></input>
+        <input type="submit" value="Add Book">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tbody id="bookList"></tbody>
+        </tbody>
+    </table>
+
+    <div container>
+        <h1>Recommendations</h1>
+    </div>
+</body> 
+</html>
